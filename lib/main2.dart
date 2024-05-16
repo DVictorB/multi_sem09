@@ -35,19 +35,9 @@ List<Variado> VariadosList = [
     imagen: 'doberman.png',
   ),
   Variado(
-    nombre: 'Powerbank',
-    precio: 'S/100.00',
-    imagen: 'powerbank.png',
-  ),
-  Variado(
     nombre: 'Pug',
     precio: 'S/200.00',
     imagen: 'pug.png',
-  ),
-  Variado(
-    nombre: 'SSD',
-    precio: 'S/250.00',
-    imagen: 'ssd.png',
   ),
   Variado(
     nombre: 'Munich',
@@ -90,11 +80,17 @@ class MyApp extends StatelessWidget {
                       ),
                       title: Text(
                         VariadosList[index].nombre,
-                        style: TextStyle(fontSize: 20.0),
+                        style: TextStyle(
+                          fontFamily: 'Ubuntu',
+                          fontSize: 20.0,
+                        ),
                       ),
                       subtitle: Text(
                         VariadosList[index].precio,
-                        style: TextStyle(fontSize: 16.0),
+                        style: TextStyle(
+                          fontFamily: 'Lato',
+                          fontSize: 15.0,
+                        ),
                       ));
                 })));
   }
